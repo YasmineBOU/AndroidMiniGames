@@ -1,27 +1,61 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+
     <GridLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="fill_parent"
         android:id="@+id/gameGrid"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:gravity="center"
-        android:numColumns="auto_fit" />
+        android:rowCount="4"
+        android:columnCount="1"
+        android:background="#212F3D"
+        >
+
+        <GridLayout
+            android:id="@+id/fourImages"
+            android:layout_width="wrap_content"
+            android:layout_height="225dp"
+            android:paddingTop="20dp"
+            android:layout_gravity="center"
+            android:horizontalSpacing="100dp"
+        />
+
+        <GridLayout
+            android:id="@+id/word"
+            android:layout_width="wrap_content"
+            android:layout_height="115dp"
+            android:paddingTop="10dp"
+            android:rowCount="1"
+            android:columnCount="6"
+            android:layout_gravity="center"
+         />
+
+        <GridLayout
+            android:id="@+id/gameState"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:rowCount="2"
+            android:columnCount="1"
+            android:paddingTop="10dp"
+
+        />
+
+        <GridLayout
+            android:id="@+id/letters"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:rowCount="2"
+            android:columnCount="6"
+        />
+
+    </GridLayout>
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
-
-
-
-    <!--        android:layout_width="wrap_content"
-            android:layout_height="wrap_content"-->
-
-    <!--android:columnWidth="120dp"-->
-    <!--android:background="@android:color/black"
-    -->
