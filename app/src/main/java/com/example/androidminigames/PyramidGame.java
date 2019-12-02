@@ -252,6 +252,7 @@ public class PyramidGame extends AppCompatActivity {
                     EndGamePopUp endGamePopUp = new EndGamePopUp(context,  display,
                                                                  gameGrid, imagesGrid, wordGrid, gameStateGrid, lettersGrid,
                                                                  gameGrid2, pyramidGrid,  numberGrid, cleanGrid, finishGrid);
+
                     endGamePopUp.displayPopUp();
                     System.out.println("!!!!!!!!!!!!!!!! YOU HAVE FINISH ALL LEVEL !!!!!!!!!!!!!!!!!!");
                 }
